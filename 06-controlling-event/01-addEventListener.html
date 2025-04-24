@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <button>버튼</button>
+
+  <script>
+    const button = document.querySelector('button')
+
+    // 이벤트 핸들러 함수
+    const handleClick = function () {
+      window.alert('버튼이 클릭 되었습니다!')
+    }
+
+    // addEventListener 메서드를 이용해 버튼에 이벤트 핸들러를 등록
+    // urls의 path 설정과 같은 문법
+    // click이라는 이벤트가 발생하면, handleClick 메서드를 실행해라
+    button.addEventListener('click', handleClick)
+  </script>
+</body>
+
+</html>
